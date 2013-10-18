@@ -7,5 +7,5 @@ urlpatterns = patterns(
     '',
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^polls/', include('polls.urls')),
+    url(r'^polls/', include('polls.urls'), namespace="polls"),
 )
